@@ -16,8 +16,8 @@ body h1 {
   color: var(--cordex-dark-green) !important;
 }
 body h2 {
-  color: var(--cordex-dark-green) !important;
-  border-bottom: 2px solid var(--cordex-light-green);
+  color: var(--cordex-light-green) !important;
+  border-bottom: 2px solid var(--cordex-yellow);
 }
 
 body a {
@@ -36,11 +36,16 @@ body a:focus {
 }
 
 /* Restore default nav tab link styles */
+.masthead,
+.site-nav {
+  background-color: var(--cordex-yellow);
+}
+
 .site-nav a,
 .site-nav a:visited,
 .site-nav a:hover,
 .site-nav a:focus {
-  color: inherit !important;
+  color: var(--cordex-dark-green) !important;
   text-decoration: inherit !important;
   transition: none;
 }
