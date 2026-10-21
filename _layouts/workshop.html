@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<main id="main" class="main-content" aria-label="Content">
+  <article class="workshop">
+    <header class="workshop-header">
+      {% if page.date and page.date_end %}
+        {% assign start_day = page.date | date: "%d" %}
+        {% assign end_day = page.date_end | date: "%d" %}
+        {% assign month = page.date | date: "%b" %}
+        {% assign year = page.date | date: "%Y" %}
+        <p class="workshop-meta"><strong>Date:</strong> {{ start_day }}-{{ end_day }} {{ month }} {{ year }}</p>
+      {% elsif page.date %}
+        <p class="workshop-meta"><strong>Date:</strong> {{ page.date | date: "%d %b %Y" }}</p>
+      {% endif %}
+      {% if page.location %}
+        <p><strong>Location:</strong> {{ page.location }}</p>
+      {% endif %}
+    </header>
+    <section class="workshop-content">
+      {{ content }}
+    </section>
+  </article>
+
+</main>

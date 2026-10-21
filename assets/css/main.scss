@@ -1,0 +1,44 @@
+---
+sitemap: false
+---
+@charset "utf-8";
+@import "so-simple";
+
+/* Custom color styles for FPS-ML-SSA site */
+
+body h1.page-title,
+body h1 {
+  color: #1a4d6e !important; /* Deep blue for main headings */
+}
+body h2 {
+  color: #217a9b !important; /* Lighter blue for subheadings */
+}
+
+body a {
+  color: #0077cc !important;
+  text-decoration: none !important;
+  transition: color 0.2s;
+}
+body a:visited {
+  color: #0077cc !important;
+}
+body a:hover,
+body a:focus {
+  color: #ff9900 !important; /* Orange on hover */
+  text-decoration: underline !important;
+}
+
+/* Restore default nav tab link styles */
+.site-nav a,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:focus {
+  color: inherit !important;
+  text-decoration: inherit !important;
+  transition: none;
+}
+
+/* Meeting metadata spacing */
+.meeting-meta {
+  margin-bottom: 0.3rem !important;
+}
