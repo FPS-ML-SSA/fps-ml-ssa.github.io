@@ -5,27 +5,34 @@ sitemap: false
 @import "so-simple";
 
 /* Custom color styles for FPS-ML-SSA site */
+:root {
+  --cordex-dark-green: #209790;
+  --cordex-light-green: #7ec9c8;
+  --cordex-yellow: #ffc941;
+}
 
 body h1.page-title,
 body h1 {
-  color: #1a4d6e !important; /* Deep blue for main headings */
+  color: var(--cordex-dark-green) !important;
 }
 body h2 {
-  color: #217a9b !important; /* Lighter blue for subheadings */
+  color: var(--cordex-dark-green) !important;
+  border-bottom: 2px solid var(--cordex-light-green);
 }
 
 body a {
-  color: #0077cc !important;
+  color: var(--cordex-dark-green) !important;
   text-decoration: none !important;
   transition: color 0.2s;
 }
 body a:visited {
-  color: #0077cc !important;
+  color: var(--cordex-dark-green) !important;
 }
 body a:hover,
 body a:focus {
-  color: #ff9900 !important; /* Orange on hover */
+  color: var(--cordex-dark-green) !important;
   text-decoration: underline !important;
+  text-decoration-color: var(--cordex-yellow) !important;
 }
 
 /* Restore default nav tab link styles */

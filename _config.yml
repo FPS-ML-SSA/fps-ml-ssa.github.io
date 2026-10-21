@@ -2,8 +2,8 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
 # Site settings
-title: "Enhancing climate downscaling at km-scale in subtropical South America using machine learning CPRCM-CMIP6 emulators"
-description: "CORDEX FPS-ML-SSA: Enhancing climate downscaling at km-scale in subtropical South America using machine learning CPRCM-CMIP6 emulators."
+title: "CORDEX FPS-ML-SSA"
+description: "Enhancing climate downscaling at km-scale in subtropical South America using machine learning CPRCM-CMIP6 emulators."
 url: "https://fps-ml-ssa.github.io"
 baseurl: "" # No subdirectory
 future: true
