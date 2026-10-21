@@ -35,8 +35,7 @@ body a:focus {
   text-decoration-color: var(--cordex-yellow) !important;
 }
 
-/* Restore default nav tab link styles */
-.masthead,
+/* CORDEX-colored navigation menu */
 .site-nav {
   background-color: var(--cordex-yellow);
 }
@@ -45,7 +44,8 @@ body a:focus {
 .site-nav a:visited,
 .site-nav a:hover,
 .site-nav a:focus {
-  color: var(--cordex-dark-green) !important;
+  color: #fff !important;
+  font-weight: 700;
   text-decoration: inherit !important;
   transition: none;
 }
